@@ -1,0 +1,73 @@
+[2026-04-15T06:27:19Z] === ENRICH ITERATION 1 START | repo=tornadoweb/tornado sha=7d646505 ===
+[2026-04-15T06:27:19Z] [iter=1] PHASE START: enrich repo=tornadoweb/tornado sha=7d646505 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7d646505-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7d6465056ceb7a054b3f64cf1c18271753b10482.nq.gz
+[2026-04-15T06:27:51Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-15T06:28:15Z] [iter=1] AST store loaded triples=1634066 load_secs=24 mem_mb=886 MB
+[2026-04-15T06:28:15Z] [iter=1] Step 2: Finding LSP targets mem_mb=886 MB
+[2026-04-15T06:28:19Z] [iter=1] LSP targets found call_sites=13359 imports=1126 extends=686 implements=0 secs=4
+[2026-04-15T06:28:23Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=886 MB
+[2026-04-15T06:28:30Z] [iter=1] Position index built positions=113083 nodes_with_types=144744 secs=7 mem_mb=886 MB
+[2026-04-15T06:28:30Z] [iter=1] Step 3: Starting LSP resolution mem_mb=886 MB already_completed_types=[] already_completed_files=0
+[2026-04-15T06:28:30Z] [iter=1] Resolving target type target_type=call_site count=13359
+[2026-04-15T06:28:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=0 resolved=0 errors=0 current=tornado/test/testing_test.py
+[2026-04-15T06:29:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=1 resolved=35 errors=91 current=tornado/simple_httpclient.py
+[2026-04-15T06:30:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=2 resolved=85 errors=189 current=tornado/test/httpclient_test.py
+[2026-04-15T06:33:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=3 resolved=131 errors=553 current=tornado/test/web_test.py
+[2026-04-15T06:43:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=4 resolved=365 errors=1741 current=tornado/test/iostream_test.py
+[2026-04-15T06:48:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.8 files_done=5 resolved=497 errors=2303 current=tornado/test/tcpclient_test.py
+[2026-04-15T06:50:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.7 files_done=6 resolved=522 errors=2526 current=tornado/test/websocket_test.py
+[2026-04-15T06:52:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=7 resolved=588 errors=2819 current=demos/websocket/chatdemo.py
+[2026-04-15T06:57:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.7 files_done=9 resolved=725 errors=3358 current=tornado/util.py
+[2026-04-15T06:59:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=11 resolved=777 errors=3658 current=tornado/web.py
+[2026-04-15T07:03:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.5 files_done=12 resolved=972 errors=4155 current=tornado/ioloop.py
+[2026-04-15T07:04:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.1 files_done=13 resolved=1020 errors=4222 current=tornado/testing.py
+[2026-04-15T07:05:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=14 resolved=1075 errors=4295 current=tornado/test/queues_test.py
+[2026-04-15T07:07:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=15 resolved=1119 errors=4576 current=tornado/test/auth_test.py
+[2026-04-15T07:08:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=41.6 files_done=16 resolved=1154 errors=4751 current=tornado/test/ioloop_test.py
+[2026-04-15T07:11:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=44.1 files_done=17 resolved=1203 errors=5054 current=tornado/test/util_test.py
+[2026-04-15T07:12:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.3 files_done=18 resolved=1238 errors=5190 current=tornado/curl_httpclient.py
+[2026-04-15T07:13:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.5 files_done=19 resolved=1265 errors=5337 current=tornado/test/options_test.py
+[2026-04-15T07:15:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.8 files_done=20 resolved=1294 errors=5492 current=tornado/httpclient.py
+[2026-04-15T07:15:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.6 files_done=22 resolved=1351 errors=5590 current=maint/test/redbot/red_test.py
+[2026-04-15T07:16:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.6 files_done=24 resolved=1386 errors=5700 current=tornado/test/routing_test.py
+[2026-04-15T07:17:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.3 files_done=25 resolved=1390 errors=5792 current=tornado/iostream.py
+[2026-04-15T07:19:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=26 resolved=1481 errors=5985 current=tornado/test/process_test.py
+[2026-04-15T07:20:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=27 resolved=1508 errors=6085 current=tornado/httpserver.py
+[2026-04-15T07:22:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.1 files_done=29 resolved=1568 errors=6358 current=tornado/test/circlerefs_test.py
+[2026-04-15T07:25:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=58.1 files_done=31 resolved=1688 errors=6703 current=tornado/httputil.py
+[2026-04-15T07:26:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.4 files_done=32 resolved=1766 errors=6861 current=tornado/test/simple_httpclient_test.py
+[2026-04-15T07:29:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.3 files_done=33 resolved=1830 errors=7207 current=tornado/queues.py
+[2026-04-15T07:32:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.7 files_done=35 resolved=1930 errors=7486 current=tornado/test/runtests.py
+[2026-04-15T07:35:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=37 resolved=2036 errors=7880 current=tornado/test/concurrent_test.py
+[2026-04-15T07:36:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.7 files_done=38 resolved=2054 errors=7959 current=tornado/options.py
+[2026-04-15T07:36:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.4 files_done=39 resolved=2096 errors=8039 current=tornado/auth.py
+[2026-04-15T07:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.7 files_done=40 resolved=2177 errors=8198 current=tornado/locale.py
+[2026-04-15T07:38:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.4 files_done=41 resolved=2231 errors=8280 current=tornado/platform/caresresolver.py
+[2026-04-15T07:39:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.0 files_done=44 resolved=2274 errors=8345 current=tornado/http1connection.py
+[2026-04-15T07:40:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.4 files_done=45 resolved=2301 errors=8511 current=tornado/log.py
+[2026-04-15T07:41:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.0 files_done=48 resolved=2344 errors=8582 current=tornado/test/escape_test.py
+[2026-04-15T07:41:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.5 files_done=49 resolved=2348 errors=8647 current=tornado/process.py
+[2026-04-15T07:42:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.3 files_done=51 resolved=2406 errors=8736 current=tornado/locks.py
+[2026-04-15T07:43:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.3 files_done=53 resolved=2451 errors=8863 current=demos/blog/blog.py
+[2026-04-15T07:44:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.1 files_done=54 resolved=2474 errors=8957 current=maint/test/cython/pythonmodule.py
+[2026-04-15T07:45:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.7 files_done=57 resolved=2533 errors=9027 current=tornado/gen.py
+[2026-04-15T07:45:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.5 files_done=58 resolved=2574 errors=9124 current=tornado/routing.py
+[2026-04-15T07:46:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.2 files_done=60 resolved=2618 errors=9208 current=docs/conf.py
+[2026-04-15T07:47:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.2 files_done=63 resolved=2686 errors=9323 current=tornado/template.py
+[2026-04-15T07:48:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.7 files_done=64 resolved=2730 errors=9492 current=tornado/platform/asyncio.py
+[2026-04-15T07:49:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.4 files_done=65 resolved=2781 errors=9580 current=tornado/test/import_test.py
+[2026-04-15T07:50:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.0 files_done=69 resolved=2815 errors=9649 current=tornado/test/log_test.py
+[2026-04-15T07:50:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.6 files_done=70 resolved=2850 errors=9721 current=maint/test/websocket/client.py
+[2026-04-15T07:51:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.3 files_done=74 resolved=2878 errors=9803 current=maint/benchmark/template_benchmark.py
+[2026-04-15T07:52:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.9 files_done=78 resolved=2909 errors=9874 current=tornado/__init__.py
+[2026-04-15T07:52:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=84 resolved=2952 errors=9948 current=demos/file_upload/file_uploader.py
+[2026-04-15T07:53:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.1 files_done=89 resolved=3005 errors=10011 current=setup.py
+[2026-04-15T07:53:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.6 files_done=95 resolved=3033 errors=10074 current=tornado/test/gettext_translations/extract_me.py
+[2026-04-15T07:54:24Z] [iter=1] Target type resolved target_type=call_site resolved=3045 errors=10118 secs=5154 mem_mb=886 MB
+[2026-04-15T07:54:24Z] [iter=1] Resolving target type target_type=import_statement count=1126
+[2026-04-15T07:54:27Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=87.1 files_done=33 resolved=495 errors=0 current=tornado/escape.py
+[2026-04-15T07:54:30Z] [iter=1] Target type resolved target_type=import_statement resolved=1109 errors=0 secs=6 mem_mb=886 MB
+[2026-04-15T07:54:30Z] [iter=1] Resolving target type target_type=extends_clause count=686
+[2026-04-15T07:54:35Z] [iter=1] Target type resolved target_type=extends_clause resolved=686 errors=0 secs=4 mem_mb=886 MB
+[2026-04-15T07:54:45Z] [iter=1] Step 5: Writing final enrichment file triples=125538
+[2026-04-15T07:54:47Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/7d6465056ceb7a054b3f64cf1c18271753b10482.nq.gz size_kb=2678
+[2026-04-15T07:54:47Z] [iter=1] PHASE END: enrich elapsed_s=5248 elapsed_min=87.5 total_triples=125538
